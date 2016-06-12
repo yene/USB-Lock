@@ -1,25 +1,58 @@
 #import "AppDelegate.h"
 #import "SSKeychain.h"
+#import "USBDevices.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+	BOOL oldState;
+}
 
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	return;
-	[self lockScreen];
-	sleep(5);
-	if ([self isLocked]) {
-		[self wakeScreen];
-		sleep(1);
-		[self unlockScreen];
-	}
+	oldState = NO;
+	[NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(check) userInfo:nil repeats:YES];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 	// Insert code here to tear down your application
+}
+
+- (void)check {
+	if ([[NSUserDefaults standardUserDefaults] stringForKey:@"device"] == nil) {
+		return;
+	}
+	
+	BOOL currentState = [self isPlugged];
+	if (oldState == currentState) {
+		return;
+	}
+	
+	if (currentState) {
+		if ([self isLocked]) {
+			[self wakeScreen];
+			sleep(1);
+			[self unlockScreen];
+		}
+	} else {
+		[self lockScreen];
+	}
+	
+	oldState = currentState;
+}
+
+- (BOOL)isPlugged {
+	BOOL deviceFound = NO;
+	NSString *search = [[NSUserDefaults standardUserDefaults] stringForKey:@"device"];
+	NSArray *devices = [USBDevices deviceAttributes];
+	for (NSString *device in devices) {
+		if ([search isEqualToString:device]) {
+			deviceFound = YES;
+			break;
+		}
+	}
+	return deviceFound;
 }
 
 - (BOOL)isLocked {
@@ -52,7 +85,7 @@
 						tell application \"System Events\"\n\
 						tell application process \"loginwindow\"\n\
 						keystroke \"%@\"\n\
-						delay 3.0\n\
+						delay 1.5\n\
 						keystroke return\n\
 						end tell\n\
 						end tell", password];

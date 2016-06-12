@@ -15,6 +15,8 @@
 		AE55C2B21D0DAEBD00A60758 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55C2AF1D0DAEBD00A60758 /* SSKeychain.m */; };
 		AE55C2B31D0DAEBD00A60758 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55C2B11D0DAEBD00A60758 /* SSKeychainQuery.m */; };
 		AE55C2B51D0DAEF500A60758 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55C2B41D0DAEF500A60758 /* Security.framework */; };
+		AE65FFE61D0DC2E900A60758 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE65FFE51D0DC2E900A60758 /* IOKit.framework */; };
+		AE65FFEA1D0DCB5600A60758 /* USBDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = AE65FFE91D0DCB5600A60758 /* USBDevices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		AE55C2B01D0DAEBD00A60758 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
 		AE55C2B11D0DAEBD00A60758 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
 		AE55C2B41D0DAEF500A60758 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE65FFE51D0DC2E900A60758 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		AE65FFE71D0DC2FA00A60758 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE65FFE81D0DCB5600A60758 /* USBDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBDevices.h; sourceTree = "<group>"; };
+		AE65FFE91D0DCB5600A60758 /* USBDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBDevices.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE65FFE61D0DC2E900A60758 /* IOKit.framework in Frameworks */,
 				AE55C2B51D0DAEF500A60758 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +56,8 @@
 		AE55C28E1D0C81D100A60758 = {
 			isa = PBXGroup;
 			children = (
+				AE65FFE71D0DC2FA00A60758 /* README.md */,
+				AE65FFE51D0DC2E900A60758 /* IOKit.framework */,
 				AE55C2B41D0DAEF500A60758 /* Security.framework */,
 				AE55C2991D0C81D100A60758 /* USB-Lock */,
 				AE55C2981D0C81D100A60758 /* Products */,
@@ -75,6 +84,8 @@
 				AE55C2A51D0C81D100A60758 /* Main.storyboard */,
 				AE55C2A81D0C81D100A60758 /* Info.plist */,
 				AE55C29D1D0C81D100A60758 /* Supporting Files */,
+				AE65FFE81D0DCB5600A60758 /* USBDevices.h */,
+				AE65FFE91D0DCB5600A60758 /* USBDevices.m */,
 			);
 			path = "USB-Lock";
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE65FFEA1D0DCB5600A60758 /* USBDevices.m in Sources */,
 				AE55C2A21D0C81D100A60758 /* ViewController.m in Sources */,
 				AE55C2B31D0DAEBD00A60758 /* SSKeychainQuery.m in Sources */,
 				AE55C2B21D0DAEBD00A60758 /* SSKeychain.m in Sources */,
@@ -313,6 +325,7 @@
 				AE55C2AD1D0C81D100A60758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
