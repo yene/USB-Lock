@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE55C29C1D0C81D100A60758 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55C29B1D0C81D100A60758 /* AppDelegate.m */; };
+		AE55C29F1D0C81D100A60758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55C29E1D0C81D100A60758 /* main.m */; };
+		AE55C2A21D0C81D100A60758 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55C2A11D0C81D100A60758 /* ViewController.m */; };
+		AE55C2A41D0C81D100A60758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE55C2A31D0C81D100A60758 /* Assets.xcassets */; };
+		AE55C2A71D0C81D100A60758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE55C2A51D0C81D100A60758 /* Main.storyboard */; };
+		AE55C2B21D0DAEBD00A60758 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55C2AF1D0DAEBD00A60758 /* SSKeychain.m */; };
+		AE55C2B31D0DAEBD00A60758 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = AE55C2B11D0DAEBD00A60758 /* SSKeychainQuery.m */; };
+		AE55C2B51D0DAEF500A60758 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE55C2B41D0DAEF500A60758 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE55C2971D0C81D100A60758 /* USB-Lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USB-Lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE55C29A1D0C81D100A60758 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE55C29B1D0C81D100A60758 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE55C29E1D0C81D100A60758 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE55C2A01D0C81D100A60758 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE55C2A11D0C81D100A60758 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE55C2A31D0C81D100A60758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE55C2A61D0C81D100A60758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE55C2A81D0C81D100A60758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE55C2AE1D0DAEBD00A60758 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
+		AE55C2AF1D0DAEBD00A60758 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
+		AE55C2B01D0DAEBD00A60758 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		AE55C2B11D0DAEBD00A60758 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
+		AE55C2B41D0DAEF500A60758 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE55C2941D0C81D100A60758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE55C2B51D0DAEF500A60758 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE55C28E1D0C81D100A60758 = {
+			isa = PBXGroup;
+			children = (
+				AE55C2B41D0DAEF500A60758 /* Security.framework */,
+				AE55C2991D0C81D100A60758 /* USB-Lock */,
+				AE55C2981D0C81D100A60758 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE55C2981D0C81D100A60758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE55C2971D0C81D100A60758 /* USB-Lock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE55C2991D0C81D100A60758 /* USB-Lock */ = {
+			isa = PBXGroup;
+			children = (
+				AE55C2B61D0DAF5800A60758 /* SSKeychain */,
+				AE55C29A1D0C81D100A60758 /* AppDelegate.h */,
+				AE55C29B1D0C81D100A60758 /* AppDelegate.m */,
+				AE55C2A01D0C81D100A60758 /* ViewController.h */,
+				AE55C2A11D0C81D100A60758 /* ViewController.m */,
+				AE55C2A31D0C81D100A60758 /* Assets.xcassets */,
+				AE55C2A51D0C81D100A60758 /* Main.storyboard */,
+				AE55C2A81D0C81D100A60758 /* Info.plist */,
+				AE55C29D1D0C81D100A60758 /* Supporting Files */,
+			);
+			path = "USB-Lock";
+			sourceTree = "<group>";
+		};
+		AE55C29D1D0C81D100A60758 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE55C29E1D0C81D100A60758 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE55C2B61D0DAF5800A60758 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				AE55C2AE1D0DAEBD00A60758 /* SSKeychain.h */,
+				AE55C2AF1D0DAEBD00A60758 /* SSKeychain.m */,
+				AE55C2B01D0DAEBD00A60758 /* SSKeychainQuery.h */,
+				AE55C2B11D0DAEBD00A60758 /* SSKeychainQuery.m */,
+			);
+			name = SSKeychain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE55C2961D0C81D100A60758 /* USB-Lock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE55C2AB1D0C81D100A60758 /* Build configuration list for PBXNativeTarget "USB-Lock" */;
+			buildPhases = (
+				AE55C2931D0C81D100A60758 /* Sources */,
+				AE55C2941D0C81D100A60758 /* Frameworks */,
+				AE55C2951D0C81D100A60758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "USB-Lock";
+			productName = "USB-Lock";
+			productReference = AE55C2971D0C81D100A60758 /* USB-Lock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE55C28F1D0C81D100A60758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yannick Weiss";
+				TargetAttributes = {
+					AE55C2961D0C81D100A60758 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AE55C2921D0C81D100A60758 /* Build configuration list for PBXProject "USB-Lock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE55C28E1D0C81D100A60758;
+			productRefGroup = AE55C2981D0C81D100A60758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE55C2961D0C81D100A60758 /* USB-Lock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE55C2951D0C81D100A60758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE55C2A41D0C81D100A60758 /* Assets.xcassets in Resources */,
+				AE55C2A71D0C81D100A60758 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE55C2931D0C81D100A60758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE55C2A21D0C81D100A60758 /* ViewController.m in Sources */,
+				AE55C2B31D0DAEBD00A60758 /* SSKeychainQuery.m in Sources */,
+				AE55C2B21D0DAEBD00A60758 /* SSKeychain.m in Sources */,
+				AE55C29F1D0C81D100A60758 /* main.m in Sources */,
+				AE55C29C1D0C81D100A60758 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE55C2A51D0C81D100A60758 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE55C2A61D0C81D100A60758 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE55C2A91D0C81D100A60758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE55C2AA1D0C81D100A60758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE55C2AC1D0C81D100A60758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "USB-Lock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickweiss.USB-Lock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE55C2AD1D0C81D100A60758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "USB-Lock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yannickweiss.USB-Lock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE55C2921D0C81D100A60758 /* Build configuration list for PBXProject "USB-Lock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE55C2A91D0C81D100A60758 /* Debug */,
+				AE55C2AA1D0C81D100A60758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE55C2AB1D0C81D100A60758 /* Build configuration list for PBXNativeTarget "USB-Lock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE55C2AC1D0C81D100A60758 /* Debug */,
+				AE55C2AD1D0C81D100A60758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE55C28F1D0C81D100A60758 /* Project object */;
+}
